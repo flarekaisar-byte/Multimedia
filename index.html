@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Document</title>
+    
+    <style>
+        :root {
+            --primary: #5A2F7D;     /* Main purple color */
+            --accent: #16b338;      /* Green accent */
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.75;
+            color: #333;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 15px rgba(33, 0, 39, 0.1);
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 480px;
+            background: linear-gradient(#5A2F7D, rgba(241, 120, 0, 0.75)), 
+                        url('Pictures/Kampus Polimedia.jpg') center/cover no-repeat;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        
+        .article-img {
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        h1, h2, h3 {
+            font-weight: 700;
+            color: var(--primary);   /* Fixed: Now uses purple instead of white */
+        }
+        
+        .footer {
+            background: #5A2F7D;
+            color: white;
+        }
+        
+        .article-content {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Pictures/Logo-Polimedia.png" alt="Polimedia Logo" style="height: 48px;">
+                
+                <!-- Added gap for better spacing between logo and text -->
+                <div class="ms-3">
+                    <h5 class="mb-0 fw-bold" style="color: #5A2F7D;">Multimedia Engineering Technology</h5>
+                    <small class="text-muted">Design Major</small>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 active" href="#main-content">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3" style="color: white;">Multimedia<br> Engineering<br> Technology</h1>
+                    <p class="lead mb-4">Learn more about the multimedia study program in Politeknik Negeri Media Kreatif.</p>
+                    
+                    <div class="d-flex gap-4 text-white-50">
+                        <div><i class="fas fa-user me-2"></i> Naufal Sangkaisar Laksono</div>
+                        <div><i class="fas fa-calendar-alt me-2"></i> June 3, 2026</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MAIN ARTICLE ==================== -->
+    <div id="main-content" class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <article>
+                    <img src="Pictures/Kampus Polimedia.jpg" alt="Polimedia Campus" class="article-img w-100 mb-4">
+                    
+                    <h1 class="display-5 fw-bold mb-4">Multimedia Study Program</h1>
+                    
+                    <div class="d-flex align-items-center gap-4 mb-5 pb-4 border-bottom">
+                        <div class="d-flex align-items-center">
+                            <img src="Pictures/Screenshot_20251208-171339.Chrome (1).png" 
+                                 class="rounded-circle me-3" alt="Author" style="width: 48px; height: 48px; object-fit: cover;">
+                            <div>
+                                <div class="fw-semibold">Naufal Sangkaisar Laksono</div>
+                                <small class="text-muted">College Student</small>
+                            </div>
+                        </div>
+                        <div class="vr"></div>
+                        <div>June 3, 2026</div>
+                    </div>
+
+                    <div class="article-content">
+                        <p class="lead">Multimedia is one of the applied bachelor study programs offered under the Design Major at Politeknik Negeri Media Kreatif. This article was created to help readers gain a better understanding of the Multimedia study program and its scope of study.<br>
+                        In addition, this article will discuss the curriculum offered in each semester to provide a clearer overview of the curriculum and help readers understand what students learn throughout the program.</p>
+                        
+                        <h2 class="mt-5">What is Multimedia?</h2>
+                        <p>The Multimedia Study Program focuses on the development of knowledge and skills across various forms of media within the creative industries. This program is designed to produce graduates who are well-prepared to meet the demands of the modern digital workforce. Career opportunities for graduates include roles such as content creators, full-stack developers, data scientists, game developers, UI/UX designers, and many other professions within the digital sector.<br><br>
+                        Examples of graduate career profiles include:<br><br>
+                        1. Multimedia Designer<br>
+                        2. Lead Programmer<br>
+                        3. Web Developer<br>
+                        4. Cloud Computing Engineer<br>
+                        5. Multimedia Effects Specialist<br>
+                        6. Database Programming Supervisor<br>
+                        7. Intermediate Animator<br>
+                        8. Creative Entrepreneur<br><br>
+                        
+                        It is important to note that these are only some of the many career paths available to Multimedia graduates. As technology and digital media continue to evolve, the opportunities within the multimedia field are vast and continually expanding.</p>
+                        
+                        <h2 class="mt-5">Multimedia Curriculum</h2>
+                        <p>The following curriculum outlines the courses offered in the Multimedia Study Program, enabling readers to gain a comprehensive understanding of the knowledge, skills, and competencies developed throughout the program.<br><br>
+                        <!-- Semester 1 -->
+                        <h4 class="mt-4">Semester 1</h4>
+                        <table class="table table-bordered curriculum-table">
+                            <thead>
+                                <tr><th>Credits</th><th>Course</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>3</td><td>Introduction to Multimedia Technology</td></tr>
+                                <tr><td>3</td><td>Fundamentals of Digital Graphic Media</td></tr>
+                                <tr><td>3</td><td>Form Drawing</td></tr>
+                                <tr><td>3</td><td>Two-Dimensional Design Principles (Nirmana Dwimatra)</td></tr>
+                                <tr><td>2</td><td>Creative Studies</td></tr>
+                                <tr><td>2</td><td>Indonesian Language</td></tr>
+                                <tr><td>2</td><td>General English</td></tr>
+                                <tr><td>2</td><td>Pancasila Education</td></tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Semester 2 -->
+                        <h4 class="mt-5">Semester 2</h4>
+                        <table class="table table-bordered curriculum-table">
+                            <thead>
+                                <tr><th>Credits</th><th>Course</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>3</td><td>Screenwriting and Storyboarding</td></tr>
+                                <tr><td>3</td><td>Fundamentals of Programming</td></tr>
+                                <tr><td>3</td><td>Fundamentals of Website Development</td></tr>
+                                <tr><td>2</td><td>2D Animation</td></tr>
+                                <tr><td>2</td><td>Religious Education</td></tr>
+                                <tr><td>2</td><td>Civic Education</td></tr>
+                                <tr><td>2</td><td>English for Specific Purposes</td></tr>
+                                <tr><td>2</td><td>Interpersonal Communication</td></tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Semester 3 -->
+                        <h4 class="mt-5">Semester 3</h4>
+                        <table class="table table-bordered curriculum-table">
+                            <thead>
+                                <tr><th>Credits</th><th>Course</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>3</td><td>Database Systems</td></tr>
+                                <tr><td>3</td><td>Dynamic Website Design</td></tr>
+                                <tr><td>3</td><td>Object-Oriented Programming</td></tr>
+                                <tr><td>3</td><td>Fundamentals and Management of Entrepreneurship</td></tr>
+                                <tr><td>2</td><td>UI/UX Design</td></tr>
+                                <tr><td>2</td><td>Application Analysis and Design</td></tr>
+                                <tr><td>2</td><td>Digital Marketing</td></tr>
+                                <tr><td>2</td><td>Professional Ethics</td></tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Semester 4 -->
+                        <h4 class="mt-5">Semester 4</h4>
+                        <table class="table table-bordered curriculum-table">
+                            <thead>
+                                <tr><th>Credits</th><th>Course</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>3</td><td>Fundamentals of Game Programming</td></tr>
+                                <tr><td>3</td><td>Visual Programming</td></tr>
+                                <tr><td>3</td><td>Mobile Application Development</td></tr>
+                                <tr><td>3</td><td>Probability & Statistics</td></tr>
+                                <tr><td>3</td><td>Interactive Digital Media</td></tr>
+                                <tr><td>3</td><td>Entrepreneurship Practice</td></tr>
+                                <tr><td>2</td><td>Audio-Video Production</td></tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Semester 5 -->
+                        <h4 class="mt-5">Semester 5</h4>
+                        <table class="table table-bordered curriculum-table">
+                            <thead>
+                                <tr><th>Credits</th><th>Course</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>3</td><td>Software Engineering</td></tr>
+                                <tr><td>3</td><td>Augmented Reality</td></tr>
+                                <tr><td>3</td><td>Multimedia Networking</td></tr>
+                                <tr><td>3</td><td>3D Animation</td></tr>
+                                <tr><td>2</td><td>Multimedia and Society</td></tr>
+                                <tr><td>2</td><td>Scientific Writing Techniques</td></tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Semester 6 -->
+                        <h4 class="mt-5">Semester 6</h4>
+                        <table class="table table-bordered curriculum-table">
+                            <thead>
+                                <tr><th>Credits</th><th>Course</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>20</td><td>Industrial Internship</td></tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Semester 7 -->
+                        <h4 class="mt-5">Semester 7</h4>
+                        <table class="table table-bordered curriculum-table">
+                            <thead>
+                                <tr><th>Credits</th><th>Course</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>3</td><td>Intelligent Game Development</td></tr>
+                                <tr><td>3</td><td>Virtual Reality</td></tr>
+                                <tr><td>3</td><td>Interactive Mobile Application Development</td></tr>
+                                <tr><td>3</td><td>Mobile UI/UX Design</td></tr>
+                                <tr><td>3</td><td>3D Animation Pipeline</td></tr>
+                                <tr><td>3</td><td>User Interaction Design</td></tr>
+                                <tr><td>2</td><td>Cloud Computing</td></tr>
+                                <tr><td>2</td><td>Research Methods</td></tr>
+                                <tr><td>2</td><td>Intelligent Multimedia Networks</td></tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Semester 8 -->
+                        <h4 class="mt-5">Semester 8</h4>
+                        <table class="table table-bordered curriculum-table">
+                            <thead>
+                                <tr><th>Credits</th><th>Course</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>6</td><td>Final Project</td></tr>
+                            </tbody>
+                        </table>
+                        </p>
+                        
+                        <!--<img src="Pictures/LAB-Komputer-600x600.jpg" class="article-img w-100 my-4" alt="AI Tutor">
+                        <p class="text-center text-muted small">Example of an AI-powered tutoring interface</p>-->
+                        
+                        <h2 class="mt-5">Conclusion</h2>
+                        <p>In conclusion, the Multimedia Study Program provides students with a strong foundation in various forms of media within the creative industries. The program equips students with broad knowledge and practical skills across multiple areas of digital media, preparing them to adapt to the evolving demands of the digital era.<br><br>
+                        For individuals who are interested in exploring a wide range of digital media disciplines, Multimedia may be an excellent choice of study. However, if you are still considering your options, it is recommended that you explore the other study programs available through the official Politeknik Negeri Media Kreatif website to find the program that best aligns with your interests and career aspirations.<br><br>
+                        Ultimately, selecting a field of study is a personal decision, and each individual has different interests, strengths, and professional goals. Choosing the right major should be based on careful consideration of these factors.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer" class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>Politeknik Negeri Media Kreatif</h5>
+                    <p class="small opacity-75">Multimedia Engineering Technology | Design Major</p>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Articles</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h6>Contact Information</h6>
+                    <p class="small opacity-75 mb-0">
+                        Email: humas@polimedia.ac.id<br>
+                        Phone: (021) 7864753<br>
+                        Adress: Jl. Srengseng Sawah No.17, RT.8/RW.3, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630
+                    </p>
+                </div>
+            </div>
+            
+            <hr class="my-4 opacity-25">
+            <div class="text-center small opacity-75">
+                © 2026 Politeknik Negeri Media Kreatif • Multimedia Engineering Technology | Design Major • All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
